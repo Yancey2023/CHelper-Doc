@@ -28,6 +28,7 @@ export default defineConfig({
         text: '资源包',
         items: [
           { text: '什么是CPack', link: '/cpack/cpack' },
+          { text: 'manifest.json', link: '/cpack/manifest' },
           { text: '命令的注册', link: '/cpack/command' },
           { text: 'ID 的注册', link: '/cpack/id' },
           { text: '节点的定义', link: '/cpack/node' },
