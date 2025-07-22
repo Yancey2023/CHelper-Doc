@@ -5,7 +5,7 @@ export default defineConfig({
   title: "CHelper文档",
   description:
     "CHelper是一个我的世界基岩版的命令助手，致力于为我的世界指令玩家提供帮助。",
-  head: [["link", { rel: "icon", href: "/logo.webp" }]],
+  head: [["link", { rel: "icon", href: "logo.webp" }]],
   lang: "zh-CN",
   cleanUrls: true,
   srcDir: "./src",
