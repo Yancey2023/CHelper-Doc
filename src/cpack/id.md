@@ -11,7 +11,7 @@ ID 有 4 种类型：
 |   block   |     方块 ID     |  带有方块状态  |
 |   item    |     物品 ID     | 带有物品数据值 |
 
-- NormalID
+## 普通的 ID
 
 ```json
 {
@@ -39,7 +39,7 @@ ID 有 4 种类型：
 |    name     | 字符串 | ID 名字 |  -   |  是  |
 | description | 字符串 | ID 介绍 |  -   |  否  |
 
-- NamespaceID
+## 带有命名空间的 ID
 
 ```json
 {
@@ -69,7 +69,7 @@ ID 有 4 种类型：
 |    name     | 字符串 | ID 名字  |                      -                       |  是  |
 | description | 字符串 | ID 介绍  |                      -                       |  否  |
 
-- block
+## 方块 ID
 
 ```json
 {
@@ -205,7 +205,7 @@ values 每个方块状态的值：
 |    value    | 布尔值 / 正整数 / 字符串 | 方块状态参数值 |  -   |  是  |
 | description |          字符串          |      介绍      |  -   |  否  |
 
-- item
+## 物品 ID
 
 ```json
 {

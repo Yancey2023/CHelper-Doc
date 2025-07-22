@@ -41,7 +41,7 @@
 |        OR         |        或节点        |                 -                  |            内置节点，不可使用             |
 |   SINGLE_SYMBOL   |       单个字符       |                 -                  |            内置节点，不可使用             |
 
-- BLOCK 方块
+## BLOCK 方块
 
 ```mcfunction
 含义：方块ID + 方块状态 / 方块ID
@@ -65,7 +65,7 @@
 |  description  | 字符串 |                  节点介绍                   |                   -                   |  否  |
 | nodeBlockType | 正整数 | 0 代表方块 ID + 方块状态，1 代表只有方块 ID |                   -                   |  是  |
 
-- BOOLEAN 布尔值
+## BOOLEAN 布尔值
 
 ```mcfunction
 含义：布尔值，只能是true或false
@@ -91,7 +91,7 @@
 | descriptionTrue | 字符串 | true 值得介绍  |                   -                   |  否  |
 | descriptionTrue | 字符串 | false 值得介绍 |                   -                   |  否  |
 
-- COMMAND 命令
+## COMMAND 命令
 
 ```mcfunction
 含义：用于命令中嵌套任意命令
@@ -113,7 +113,7 @@
 |    brief    | 字符串 | 简要说明 | 如果 description 太长，推荐填写 brief |  否  |
 | description | 字符串 | 节点介绍 |                   -                   |  否  |
 
-- COMMAND_NAME 命令名
+## COMMAND_NAME 命令名
 
 ```mcfunction
 含义：命令名
@@ -136,7 +136,7 @@
 |    brief    | 字符串 | 简要说明 | 如果 description 太长，推荐填写 brief |  否  |
 | description | 字符串 | 节点介绍 |                   -                   |  否  |
 
-- FLOAT 小数
+## FLOAT 小数
 
 ```mcfunction
 含义：小数
@@ -163,7 +163,7 @@
 |     min     |  小数  |  最小值  |                   -                   |  否  |
 |     max     |  小数  |  最大值  |                   -                   |  否  |
 
-- INTEGER 整数
+## INTEGER 整数
 
 ```mcfunction
 含义：整数
@@ -188,7 +188,7 @@
 |     min     |  整数  |  最小值  |                   -                   |  否  |
 |     max     |  整数  |  最大值  |                   -                   |  否  |
 
-- INTEGER_WITH_UNIT 带单位的整数
+## INTEGER_WITH_UNIT 带单位的整数
 
 ```mcfunction
 含义：带单位的整数
@@ -225,7 +225,7 @@
 |    name     | 字符串 | 单位名 |  -   |  是  |
 | description | 字符串 |  介绍  |  -   |  否  |
 
-- ITEM 物品
+## ITEM 物品
 
 ```mcfunction
 含义：物品
@@ -249,7 +249,7 @@
 | description  | 字符串 |                                      节点介绍                                       |                   -                   |  否  |
 | nodeItemType | 正整数 | 0 代表<物品 ID> <物品数量> <附加值> [物品组件]，1 代表<物品 ID> <附加值> <物品数量> |                   -                   |  是  |
 
-- NAMESPACE_ID 带命名空间的 ID
+## NAMESPACE_ID 带命名空间的 ID
 
 ```mcfunction
 含义：带命名空间的ID
@@ -285,7 +285,7 @@ contents 每个 ID：
 |    name     | 字符串 | ID 名字  |                      -                       |  是  |
 | description | 字符串 | ID 介绍  |                      -                       |  否  |
 
-- NORMAL_ID 普通的 ID
+## NORMAL_ID 普通的 ID
 
 ```mcfunction
 含义：普通的ID
@@ -320,7 +320,7 @@ contents 每个 ID：
 |    name     | 字符串 | ID 名字 |  -   |  是  |
 | description | 字符串 | ID 介绍 |  -   |  否  |
 
-- POSITION 位置
+## POSITION 位置
 
 ```mcfunction
 含义：位置
@@ -343,7 +343,7 @@ contents 每个 ID：
 |    brief    | 字符串 | 简要说明 | 如果 description 太长，推荐填写 brief |  否  |
 | description | 字符串 | 节点介绍 |                   -                   |  否  |
 
-- RELATIVE_FLOAT 相对坐标
+## RELATIVE_FLOAT 相对坐标
 
 ```mcfunction
 含义：相对坐标
@@ -368,7 +368,7 @@ contents 每个 ID：
 |     description     | 字符串 |          节点介绍          |                   -                   |  否  |
 | canUseCaretNotation | 布尔值 |    是否可以使用局部坐标    |                   -                   |  否  |
 
-- REPEAT 重复的参数
+## REPEAT 重复的参数
 
 ```mcfunction
 含义：重复的参数
@@ -392,7 +392,7 @@ contents 每个 ID：
 | description | 字符串 |            节点介绍            |                   -                   |  否  |
 |     key     | 字符串 | 键值，用于在 repeat 中进行索引 |                   -                   |  是  |
 
-- STRING 字符串
+## STRING 字符串
 
 ```mcfunction
 含义：字符串
@@ -419,7 +419,7 @@ contents 每个 ID：
 | canContainSpace | 布尔值 |         是否可以包含空格，也就是说是否支持使用双引号         |                   -                   |  是  |
 |   ignoreLater   | 布尔值 | 是否忽略后面的东西，也就是说是否把后面的所有文字都当作字符串 |                   -                   |  是  |
 
-- TARGET_SELECTOR 目标选择器
+## TARGET_SELECTOR 目标选择器
 
 ```mcfunction
 含义：目标选择器
@@ -449,7 +449,7 @@ contents 每个 ID：
 |  isMustNPC   | 布尔值 |   是否只能选择 NPC    |                   -                   |  是  |
 |  isWildcard  | 布尔值 |    是否可以使用\*     |                   -                   |  是  |
 
-- TEXT 文字
+## TEXT 文字
 
 ```mcfunction
 含义：文字
@@ -483,7 +483,7 @@ data：
 |    name     | 字符串 | ID 名字 |  -   |  是  |
 | description | 字符串 | ID 介绍 |  -   |  否  |
 
-- RANGE 范围
+## RANGE 范围
 
 ```mcfunction
 含义：范围
@@ -505,7 +505,7 @@ data：
 |    brief    | 字符串 | 简要说明 | 如果 description 太长，推荐填写 brief |  否  |
 | description | 字符串 | 节点介绍 |                   -                   |  否  |
 
-- JSON Json 文本
+## JSON Json 文本
 
 ```mcfunction
 含义：Json文本
@@ -530,7 +530,7 @@ data：
 | description | 字符串 |           节点介绍           |                   -                   |  否  |
 |     key     | 字符串 | 键值，用于在 json 中进行索引 |                   -                   |  是  |
 
-- JSON_BOOLEAN Json 布尔值
+## JSON_BOOLEAN Json 布尔值
 
 ```mcfunction
 含义：Json布尔值
@@ -556,7 +556,7 @@ data：
 | descriptionTrue | 字符串 | true 值得介绍  |                   -                   |  否  |
 | descriptionTrue | 字符串 | false 值得介绍 |                   -                   |  否  |
 
-- JSON_FLOAT Json 小数
+## JSON_FLOAT Json 小数
 
 ```mcfunction
 含义：Json小数
@@ -580,7 +580,7 @@ data：
 |     min     |  小数  |  最小值  |                   -                   |  否  |
 |     max     |  小数  |  最大值  |                   -                   |  否  |
 
-- JSON_INTEGER Json 整数
+## JSON_INTEGER Json 整数
 
 ```mcfunction
 含义：Json整数
@@ -604,7 +604,7 @@ data：
 |     min     |  整数  |  最小值  |                   -                   |  否  |
 |     max     |  整数  |  最大值  |                   -                   |  否  |
 
-- JSON_LIST Json 列表
+## JSON_LIST Json 列表
 
 ```mcfunction
 含义：Json列表
@@ -628,7 +628,7 @@ data：
 | description | 字符串 | 节点介绍 |                   -                   |  否  |
 |    data     | 字符串 | 数据类型 |                   -                   |  是  |
 
-- JSON_NULL Json 空值
+## JSON_NULL Json 空值
 
 ```mcfunction
 含义：Json空值
@@ -650,7 +650,7 @@ data：
 |    brief    | 字符串 | 简要说明 | 如果 description 太长，推荐填写 brief |  否  |
 | description | 字符串 | 节点介绍 |                   -                   |  否  |
 
-- JSON_OBJECT Json 对象
+## JSON_OBJECT Json 对象
 
 ```mcfunction
 含义：Json对象
@@ -688,7 +688,7 @@ data 中的每个键值对：
 | description |   字符串   |  介绍   |  -   |  否  |
 |    value    | 字符串数组 | 值的 ID |  -   |  是  |
 
-- JSON_STRING Json 字符串
+## JSON_STRING Json 字符串
 
 ```mcfunction
 含义：Json字符串
