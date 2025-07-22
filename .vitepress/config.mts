@@ -53,6 +53,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
+      { icon: "bilibili", link: "https://space.bilibili.com/470179011" },
+      { icon: "qq", link: "https://qun.qq.com/universal-share/share?ac=1&authKey=TNhzRmfsG%2B2pxmSIE5UpHpYhPF1n67hSGBhzsfC6mc5xwQ6lg0xcfuJ3Z7iOBUOD&busi_data=eyJncm91cENvZGUiOiI3NjY2MjU1OTciLCJ0b2tlbiI6InBIdE1jc1NndWxseDBicklIQms2SExTSjFjSFkwcWpSUFMyR0YySjB1NERhNGc4WVA0YUxlVlFXakRnRjVZQXgiLCJ1aW4iOiIxNzA5MTg1NDgyIn0%3D&data=Ua2iHVoaLyx3R03s4Ff1e2waRR1Aqya0zyD_8GlSCN8MT-PWCdvWKGNsi1G4gjo-P7ssvWN0xCq4GEp4F_fbog&svctype=4&tempid=h5_group_info" },
       { icon: "github", link: "https://github.com/Yancey2023/CHelper-Core" },
     ],
 
