@@ -28,31 +28,17 @@ CHelper 是一个开源的我的世界基岩版命令助手，致力于为我的
 
 说到底，这个项目最开始只是出于我的兴趣，也从来没有想到过能坚持这么久。一路走来，感谢有你！！！
 
-## 相关代码和文档
-
-更新日志：
-
-- <https://www.yanceymc.cn/blog/article/chelper-release-notes>
-
-开发文档：
-
-- 资源包文档：<https://www.yanceymc.cn/blog/article/chelper-cpack>
-
-- 内核文档：<https://www.yanceymc.cn/blog/article/chelper-core>
-
-- 安卓接口 / Java接口文档：<https://www.yanceymc.cn/blog/article/chelper-android>
-
-- 网页接口 / JavaScript 接口文档：<https://www.yanceymc.cn/blog/article/chelper-web>
-
-相关代码：
+## 代码仓库
 
 - 序列化框架：<https://github.com/Yancey2023/serialization>
 
-- 内核源码：<https://github.com/Yancey2023/CHelper-Core>
+- 内核：<https://github.com/Yancey2023/CHelper-Core>
 
-- 安卓版源码：<https://github.com/Yancey2023/CHelper-Android>
+- 安卓版：<https://github.com/Yancey2023/CHelper-Android>
 
-- 网页版源码：<https://github.com/Yancey2023/chelper_web>
+- 网页版：<https://github.com/Yancey2023/chelper_web>
+
+- 文档：<https://github.com/Yancey2023/CHelper-Doc>
 
 ## 加入我们
 
