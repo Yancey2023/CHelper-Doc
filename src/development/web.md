@@ -45,11 +45,11 @@ export class CHelperCore {
   }
 
   getSuggestionSize() {
-    // 获取补全建议数量
+    // 获取补全提示数量
   }
 
   getSuggestion(which) {
-    // 获取其中一个补全建议
+    // 获取其中一个补全提示
   }
 
   getAllSuggestions() {
@@ -57,7 +57,7 @@ export class CHelperCore {
   }
 
   onSuggestionClick(which) {
-    // 补全建议使用事件
+    // 补全提示使用事件
   }
 }
 ```
