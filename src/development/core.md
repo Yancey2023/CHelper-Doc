@@ -59,12 +59,12 @@ cmake --build ./build ---target CHelperCmd
 
 D:\AS\sdk\cmake\3.22.1\bin\cmake.exe `
 -D CMAKE_BUILD_TYPE=Release `
--D CMAKE_TOOLCHAIN_FILE=D:\\AS\\sdk\ndk\\28.1.13356709\\build\\cmake\\android.toolchain.cmake `
+-D CMAKE_TOOLCHAIN_FILE=D:\\AS\\sdk\ndk\\28.2.13676358\\build\\cmake\\android.toolchain.cmake `
 -D ANDROID_ABI=arm64-v8a `
--D ANDROID_NDK=D:\\AS\sdk\\ndk\\28.1.13356709 `
+-D ANDROID_NDK=D:\\AS\sdk\\ndk\\28.2.13676358 `
 -D ANDROID_PLATFORM=android-24 `
 -D CMAKE_ANDROID_ARCH_ABI=arm64-v8a `
--D CMAKE_ANDROID_NDK=D:\\AS\\sdk\\ndk\\28.1.13356709 `
+-D CMAKE_ANDROID_NDK=D:\\AS\\sdk\\ndk\\28.2.13676358 `
 -D CMAKE_EXPORT_COMPILE_COMMANDS=ON `
 -D CMAKE_MAKE_PROGRAM=D:\\AS\\sdk\\cmake\\3.22.1\\bin\\ninja.exe `
 -D CMAKE_SYSTEM_NAME=Android `
@@ -94,10 +94,10 @@ cd ..
 git clone https://github.com/Yancey2023/CHelper-Core.git
 cd ./CHelper-Core/CHelper-Web
 
-emcmake cmake -B build-DCMAKE_BUILD_TYPE=MinSizeRel
-cd cmake-build-emscripten-minsizerel
+emcmake cmake -B build -D CMAKE_BUILD_TYPE=MinSizeRel
+cd build
 emmake make CHelperWeb -j
-emcc libCHelperWeb.a include/CHelper-Core/libCHelperNoFilesystemCore.a include/CHelper-Core/include/fmt/libfmt.a include/CHelper-Core/include/spdlog/libspdlog.a include/CHelper-Core/include/xxHash/cmake_unofficial/libxxhash.a -Os -o libCHelperWeb.js -s FILESYSTEM=0 -s DISABLE_EXCEPTION_CATCHING=1 -s ALLOW_MEMORY_GROWTH -s ENVIRONMENT="web" -s EXPORTED_FUNCTIONS="['_init','_release','_onTextChanged','_onSelectionChanged','_getDescription','_getErrorReason','_getSuggestionSize','_getSuggestionTitle','_getSuggestionDescription', '_onSuggestionClick', '_malloc', '_free']" -s WASM=1 -s "EXPORTED_RUNTIME_METHODS=[]"
+emcc libCHelperWeb.a include/CHelper-Core/libCHelperNoFilesystemCore.a include/CHelper-Core/include/fmt/libfmt.a include/CHelper-Core/include/spdlog/libspdlog.a include/CHelper-Core/include/xxHash/cmake_unofficial/libxxhash.a -O3 -o libCHelperWeb.js -s FILESYSTEM=0 -s DISABLE_EXCEPTION_CATCHING=1 -s ALLOW_MEMORY_GROWTH -s ENVIRONMENT="web" -s EXPORTED_FUNCTIONS="['_init','_release','_onTextChanged','_onSelectionChanged','_getDescription','_getErrorReasons','_getSuggestionSize','_getSuggestion','_getAllSuggestions','_onSuggestionClick','_getSyntaxTokens','_malloc','_free']" -s WASM=1 -s "EXPORTED_RUNTIME_METHODS=[]"
 cd ..
 
 python3 ./script/patch-wasm.py
