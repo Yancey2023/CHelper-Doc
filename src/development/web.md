@@ -59,6 +59,10 @@ export class CHelperCore {
   onSuggestionClick(which) {
     // 补全提示使用事件
   }
+
+  getSyntaxTokens() {
+    // 获取每个字符的token类型，用于语法高亮
+  }
 }
 ```
 
