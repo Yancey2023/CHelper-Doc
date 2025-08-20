@@ -25,7 +25,7 @@
   padding: 18px;
 }
 
-img[src*='/donate/'] {
+img[src*='/donate'] {
   width: min(50%, 300px);
   height: auto;
 }
