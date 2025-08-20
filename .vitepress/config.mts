@@ -87,6 +87,10 @@ export default defineConfig({
             text: "CHelper 更新日志",
             link: "/chelper-release-notes",
           },
+          {
+            text: "赞助",
+            link: "/donate",
+          },
         ],
       },
       {
