@@ -6,6 +6,10 @@
 
 ![](./donate/donate.jpg)
 
+## 50元
+
+![](./donate/donate-2025-09-12-13-00-30.jpg)
+
 ## 100元
 
 ![](./donate/donate-2025-08-16-19-39-27.jpeg)
